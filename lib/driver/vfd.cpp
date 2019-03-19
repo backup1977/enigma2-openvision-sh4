@@ -109,13 +109,14 @@ struct vfd_ioctl_data
    || defined (ENABLE_SPARK7162)
 	#define VFDLENGTH 8
 #elif defined (ENABLE_FORTIS_HDBOX) \
-   || defined (ENABLE_ATEVIO7500)
+   || defined (ENABLE_ATEVIO7500) \
+   || defined (ENABLE_CUBEREVO)
 	#define VFDLENGTH 12
-#elif defined (ENABLE_CUBEREVO) \
-   || defined(ENABLE_CUBEREVO_MINI) \
+#elif defined (ENABLE_CUBEREVO_9500HD)
+	#define VFDLENGTH 13
+#elif defined (ENABLE_CUBEREVO_MINI) \
    || defined(ENABLE_CUBEREVO_MINI2) \
    || defined (ENABLE_CUBEREVO_3000HD) \
-   || defined (ENABLE_CUBEREVO_9500HD) \
    || defined (ENABLE_CUBEREVO_2000HD)
 	#define VFDLENGTH 14
 #else
@@ -155,8 +156,17 @@ evfd::evfd()
 	vfd_type = 11;
 #elif defined(ENABLE_UFS912) || defined(ENABLE_UFS913)
 	vfd_type = 12;
-#elif defined(ENABLE_CUBEREVO) || defined(ENABLE_CUBEREVO_MINI2) || defined(ENABLE_CUBEREVO_MINI) || defined(ENABLE_CUBEREVO_3000HD) || defined(ENABLE_CUBEREVO_9500HD) || defined(ENABLE_CUBEREVO_2000HD) || defined(ENABLE_CUBEREVO_250HD)
+#elif defined(ENABLE_CUBEREVO)
 	vfd_type = 13;
+#elif defined (ENABLE_CUBEREVO_250HD)
+	vfd_type = 14;
+#elif defined (ENABLE_CUBEREVO_MINI) \
+   || defined (ENABLE_CUBEREVO_MINI2) \
+   || defined (ENABLE_CUBEREVO_2000HD) \
+   || defined (ENABLE_CUBEREVO_3000HD)
+	vfd_type = 15;
+#elif defined (ENABLE_CUBEREVO_9500HD)
+	vfd_type = 16;
 #else
 	vfd_type = -1;
 #endif
@@ -344,7 +354,6 @@ void * start_loop (void *arg)
 	 && !defined(ENABLE_CUBEREVO) \
 	 && !defined(ENABLE_CUBEREVO_MINI) \
 	 && !defined(ENABLE_CUBEREVO_MINI2) \
-	 && !defined(ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined(ENABLE_CUBEREVO_250HD) \
 	 && !defined(ENABLE_CUBEREVO_2000HD) \
 	 && !defined(ENABLE_CUBEREVO_3000HD) \
@@ -437,7 +446,6 @@ void * start_loop (void *arg)
 	 && !defined(ENABLE_CUBEREVO) \
 	 && !defined(ENABLE_CUBEREVO_MINI) \
 	 && !defined(ENABLE_CUBEREVO_MINI2) \
-	 && !defined(ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined(ENABLE_CUBEREVO_250HD) \
 	 && !defined(ENABLE_CUBEREVO_2000HD) \
 	 && !defined(ENABLE_CUBEREVO_3000HD) \
@@ -460,7 +468,6 @@ void * start_loop (void *arg)
  || defined(ENABLE_CUBEREVO) \
  || defined(ENABLE_CUBEREVO_MINI) \
  || defined(ENABLE_CUBEREVO_MINI2) \
- || defined(ENABLE_CUBEREVO_MINI_FTA) \
  || defined(ENABLE_CUBEREVO_250HD) \
  || defined(ENABLE_CUBEREVO_2000HD) \
  || defined(ENABLE_CUBEREVO_3000HD) \
@@ -564,7 +571,7 @@ void evfd::vfd_write_string(char *str, bool force)
 	if (VFD_CENTER)
 	{
 		if (i < VFDLENGTH)
-			ws=(VFDLENGTH-i)/2;
+			ws=(VFDLENGTH - i) / 2;
 		else
 			ws = 0;
 	}
@@ -718,6 +725,10 @@ void evfd::vfd_clear_icons()
 		for (id = 1; id < 23; id++);
 	#elif defined ENABLE_UFS912 || defined ENABLE_UFS913
 		for (id = 1; id < 16; id++)
+	#elif defined ENABLE_CUBEREVO
+		for (id = 1; id < 28; id++)
+	#elif defined ENABLE_CUBEREVO_MINI || defined ENABLE_CUBEREVO_MINI2 || defined ENABLE_CUBEREVO_2000HD || defined ENABLE_CUBEREVO_3000HD
+		for (id = 1; id < 7; id++)
 	#else
 		for (id = 0x10; id < 0x20; id++)
 	#endif
@@ -768,7 +779,6 @@ void evfd::vfd_set_fan(bool onoff)
 #if defined(ENABLE_CUBEREVO) \
  || defined(ENABLE_CUBEREVO_MINI) \
  || defined(ENABLE_CUBEREVO_MINI2) \
- || defined(ENABLE_CUBEREVO_MINI_FTA) \
  || defined(ENABLE_CUBEREVO_250HD) \
  || defined(ENABLE_CUBEREVO_2000HD) \
  || defined(ENABLE_CUBEREVO_3000HD) \
