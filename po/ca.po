@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-18 10:54+0330\n"
+"POT-Creation-Date: 2019-03-18 13:53+0330\n"
 "PO-Revision-Date: 2007-08-14 10:23+0200\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: \n"
@@ -111,6 +111,9 @@ msgid ""
 "View, install and remove available or installed packages."
 msgstr ""
 
+msgid "  REC  "
+msgstr ""
+
 msgid " (0 - all networks)"
 msgstr ""
 
@@ -191,7 +194,7 @@ msgstr ""
 msgid "%2.1f sec"
 msgstr ""
 
-#. TRANSLATORS: default time format hour:minute
+#. TRANSLATORS: short time representation hour:minute
 #, python-format
 msgid "%2d:%02d"
 msgstr ""
@@ -367,6 +370,10 @@ msgstr "%d.%B %Y"
 msgid "%d:%02d"
 msgstr ""
 
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
+
 #
 #, fuzzy, python-format
 msgid ""
@@ -458,6 +465,9 @@ msgstr "<desconegut>"
 msgid "* Only available if more than one interface is active."
 msgstr ""
 
+msgid "-"
+msgstr ""
+
 msgid "-NO SERVICE\n"
 msgstr ""
 
@@ -495,6 +505,9 @@ msgid "100 MB/s"
 msgstr ""
 
 msgid "10bit"
+msgstr ""
+
+msgid "12 character"
 msgstr ""
 
 #
@@ -540,6 +553,11 @@ msgid "18 V"
 msgstr "18 V"
 
 #
+#, fuzzy
+msgid "1X"
+msgstr "1"
+
+#
 msgid "2"
 msgstr "2"
 
@@ -559,14 +577,38 @@ msgid "29.97"
 msgstr ""
 
 #
+#, fuzzy
+msgid "2X"
+msgstr "2"
+
+#
 msgid "3"
 msgstr "3"
 
 msgid "30"
 msgstr ""
 
-msgid "3D Modus"
+#
+#, fuzzy
+msgid "3D Surround"
+msgstr "So"
+
+msgid "3D Surround Speaker Position"
 msgstr ""
+
+msgid "3D surround"
+msgstr ""
+
+msgid "3D surround softlimiter"
+msgstr ""
+
+msgid "3D surround speaker position"
+msgstr ""
+
+#
+#, fuzzy
+msgid "3X"
+msgstr "3"
 
 msgid "3d mode"
 msgstr ""
@@ -575,10 +617,13 @@ msgstr ""
 msgid "4"
 msgstr "4"
 
+msgid "420"
+msgstr ""
+
 msgid "422"
 msgstr ""
 
-msgid "450 (default)"
+msgid "444"
 msgstr ""
 
 #
@@ -596,13 +641,15 @@ msgid "4:3 PanScan"
 msgstr "4:3 PanScan"
 
 #
+#, fuzzy
+msgid "4X"
+msgstr "4"
+
+#
 msgid "5"
 msgstr "5"
 
 msgid "50 MB/s"
-msgstr ""
-
-msgid "540 (default)"
 msgstr ""
 
 msgid "6"
@@ -616,6 +663,9 @@ msgstr "7"
 msgid "8"
 msgstr "8"
 
+msgid "8 character"
+msgstr ""
+
 msgid "8bit"
 msgstr ""
 
@@ -627,7 +677,15 @@ msgid ": 0000 - default (disabled)"
 msgstr ""
 
 #
+#, fuzzy
+msgid "<Alternate Skin>"
+msgstr "afegir alternatives"
+
+#
 msgid "<Current movielist location>"
+msgstr ""
+
+msgid "<Default Skin with Picon>"
 msgstr ""
 
 #
@@ -758,19 +816,34 @@ msgstr ""
 msgid "A/V settings"
 msgstr "Config A/V"
 
+msgid "AAC Plus downmix"
+msgstr ""
+
 msgid "AAC downmix"
 msgstr ""
 
+msgid "AAC plus downmix"
+msgstr ""
+
+msgid "AAC transcoding"
+msgstr ""
+
+msgid "AC3"
+msgstr ""
+
 msgid "AC3 downmix"
+msgstr ""
+
+msgid "AC3 plus transcoding"
+msgstr ""
+
+msgid "AC3plus transcoding"
 msgstr ""
 
 msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "AGC:"
-msgstr ""
-
-msgid "APN"
 msgstr ""
 
 msgid "ASS File"
@@ -804,9 +877,6 @@ msgstr ""
 msgid "Activate HbbTV (Redbutton)"
 msgstr ""
 
-msgid "Activate Keymap now?"
-msgstr ""
-
 #
 msgid "Activate Picture in Picture"
 msgstr "Activar PiP"
@@ -831,8 +901,7 @@ msgstr ""
 msgid "Activate timeshift end and pause"
 msgstr ""
 
-#, python-format
-msgid "Active Keymap: %s"
+msgid "Active"
 msgstr ""
 
 #
@@ -930,11 +999,6 @@ msgstr "Afegir als preferits"
 msgid "Add/remove change timer for current event"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Additional PPPD options"
-msgstr "Opcions d'àudio"
-
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
@@ -1003,9 +1067,6 @@ msgstr "Tot"
 msgid "All ages"
 msgstr ""
 
-msgid "All caps"
-msgstr ""
-
 msgid "All frequency"
 msgstr ""
 
@@ -1054,6 +1115,9 @@ msgstr ""
 msgid "Allow unsupported modes"
 msgstr ""
 
+msgid "Allows you to enable/disable displaying icons on the frontpanel."
+msgstr ""
+
 #
 msgid "Alpha"
 msgstr "Alpha"
@@ -1097,9 +1161,6 @@ msgid "Always include ECM in recordings"
 msgstr ""
 
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
-msgstr ""
-
-msgid "Always off"
 msgstr ""
 
 msgid "American Samoa"
@@ -1159,18 +1220,6 @@ msgstr ""
 
 msgid "Are you sure to remove this entry?"
 msgstr ""
-
-msgid ""
-"Are you sure to save the current configuration and reboot your receiver?\n"
-"\n"
-msgstr ""
-
-#
-#, fuzzy
-msgid ""
-"Are you sure to save the current configuration?\n"
-"\n"
-msgstr "Configuració del sintonitzador"
 
 #
 msgid ""
@@ -1235,11 +1284,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Aspect list..."
-msgstr "Llista de subserveis..."
-
-#
-#, fuzzy
 msgid "Aspect ratio"
 msgstr "Relació d'aspecte"
 
@@ -1280,6 +1324,12 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
+msgid "Audio Source"
+msgstr ""
+
+msgid "Audio auto volume level"
+msgstr ""
+
 msgid "Audio language selection 1"
 msgstr ""
 
@@ -1298,9 +1348,6 @@ msgid "Audio options..."
 msgstr "Opcions d'àudio"
 
 msgid "Audio plugins"
-msgstr ""
-
-msgid "Audio source"
 msgstr ""
 
 #, python-format
@@ -1346,6 +1393,9 @@ msgstr ""
 msgid "Auto EXIF Orientation rotation/flipping"
 msgstr ""
 
+msgid "Auto Volume Level"
+msgstr ""
+
 #
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr ""
@@ -1363,16 +1413,11 @@ msgstr ""
 msgid "Auto language selection"
 msgstr ""
 
-#
-msgid "Auto scart switching"
+msgid "Auto play blu-ray file"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Auto start"
-msgstr "per a començar"
-
-msgid "Auto(not available)"
+msgid "Auto scart switching"
 msgstr ""
 
 msgid "Autoinstalling Completed"
@@ -1405,6 +1450,16 @@ msgid "Automatically turn on external subtitles"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Autostart"
+msgstr "per a començar"
+
+#
+#, fuzzy
+msgid "Autostart:"
+msgstr "per a començar"
+
+#
 msgid "Available format variables"
 msgstr ""
 
@@ -1433,6 +1488,24 @@ msgid "BT 2020 NCL"
 msgstr ""
 
 msgid "BT 709"
+msgstr ""
+
+msgid "BT2020 CL"
+msgstr ""
+
+msgid "BT2020 NCL"
+msgstr ""
+
+msgid "BT470 BG"
+msgstr ""
+
+msgid "BT601 XvYCC"
+msgstr ""
+
+msgid "BT709"
+msgstr ""
+
+msgid "BT709 XvYCC"
 msgstr ""
 
 #
@@ -1563,17 +1636,18 @@ msgstr ""
 msgid "Black screen till locked"
 msgstr ""
 
+msgid "Blinking blue"
+msgstr ""
+
+msgid "Blinking red"
+msgstr ""
+
 #
 msgid "Block noise reduction"
 msgstr ""
 
 msgid "Blue"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Blue LED brightness"
-msgstr "Brillantor"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
@@ -1591,9 +1665,6 @@ msgstr ""
 msgid "Boost green"
 msgstr ""
 
-msgid "Booster Control"
-msgstr ""
-
 msgid "Bosnia and Herzegovina"
 msgstr ""
 
@@ -1608,6 +1679,11 @@ msgstr ""
 
 #
 msgid "Brightness"
+msgstr "Brillantor"
+
+#
+#, fuzzy
+msgid "Brightness (Dimmed)"
 msgstr "Brillantor"
 
 msgid "British Indian Ocean Territory"
@@ -1682,11 +1758,34 @@ msgstr ""
 msgid "CI (Common Interface) Setup"
 msgstr ""
 
+msgid "CI Legacy"
+msgstr ""
+
+#
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Mode configuració"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr ""
 
 msgid "CI slot: "
+msgstr ""
+
+msgid "CIHelper Setup"
+msgstr ""
+
+msgid "CIHelper for slot CI0"
+msgstr ""
+
+msgid "CIHelper for slot CI1"
 msgstr ""
 
 msgid "CPU: "
@@ -1788,9 +1887,6 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
-msgid "Center text"
-msgstr ""
-
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -1835,9 +1931,6 @@ msgstr ""
 msgid "Change timer"
 msgstr ""
 
-msgid "Change video port"
-msgstr ""
-
 #
 msgid "Channel"
 msgstr "Canal"
@@ -1872,28 +1965,13 @@ msgstr "Canal:"
 msgid "Channellist menu"
 msgstr "Menú de llista de canals"
 
-msgid "Channelname in Standby Clock"
-msgstr ""
-
-msgid "Channelname in Standby off"
-msgstr ""
-
 msgid "Channelnumber and picon"
 msgstr ""
 
 msgid "Channelnumber and servicename"
 msgstr ""
 
-msgid "Channelnumber in Standby Clock"
-msgstr ""
-
-msgid "Channelnumber in Standby off"
-msgstr ""
-
 msgid "Channelnumber, picon and servicename"
-msgstr ""
-
-msgid "Channelnumber/Clock in Standby Clock"
 msgstr ""
 
 #
@@ -1968,6 +2046,24 @@ msgstr ""
 msgid "Choose bouquet"
 msgstr ""
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
+msgid "Choose whether AAC sound tracks should be transcoded."
+msgstr ""
+
+msgid "Choose whether AC3 Plus sound tracks should be transcoded to AC3."
+msgstr ""
+
+msgid "Choose whether DTS channel sound tracks should be downmixed or transcoded."
+msgstr ""
+
+msgid "Choose whether WMA Pro channel sound tracks should be downmixed or transcoded."
+msgstr ""
+
+msgid "Choose whether multi channel sound tracks should be convert to PCM or SPDIF."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr ""
 
@@ -2011,11 +2107,6 @@ msgstr "netejar la llista"
 msgid "Client is streaming from this box!"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Clock always"
-msgstr "16:9 sempre"
-
 msgid "Clone TV screen to LCD"
 msgstr ""
 
@@ -2056,11 +2147,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "Colombia"
-msgstr "Format de color"
-
-#
-#, fuzzy
-msgid "Color"
 msgstr "Format de color"
 
 #
@@ -2137,11 +2223,6 @@ msgstr "Mode configuració"
 
 #
 #, fuzzy
-msgid "Configuration saved!"
-msgstr "Mode configuració"
-
-#
-#, fuzzy
 msgid "Configuration..."
 msgstr "Mode configuració"
 
@@ -2175,6 +2256,18 @@ msgid "Configure for how long the infobar will remain visible after activation."
 msgstr ""
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
+msgstr ""
+
+msgid "Configure front LED color during normal operations (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during recording in standby (this needs an enigma2 restart)."
+msgstr ""
+
+msgid "Configure front LED color during standby (this needs an enigma2 restart)."
 msgstr ""
 
 msgid "Configure how many channels are shown in the selection list."
@@ -2259,6 +2352,9 @@ msgstr ""
 msgid "Configure the brightness level of the front panel display during standby."
 msgstr ""
 
+msgid "Configure the brightness level of the front panel display for dimmed operation."
+msgstr ""
+
 msgid "Configure the brightness level of the front panel display."
 msgstr ""
 
@@ -2266,9 +2362,6 @@ msgid "Configure the color of the external subtitles, alternative (normal in whi
 msgstr ""
 
 msgid "Configure the color of the teletext subtitles."
-msgstr ""
-
-msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
 msgstr ""
 
 msgid "Configure the contrast level of the front panel display."
@@ -2456,6 +2549,9 @@ msgstr ""
 msgid "Configure whether or not an icon should be shown when your motorized dish is moving."
 msgstr ""
 
+msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseuso recordings (e.g. EPGrefresh)."
+msgstr ""
+
 msgid "Configure which access level to use for the configuration menu. Expert level gives access to all items."
 msgstr ""
 
@@ -2524,9 +2620,6 @@ msgstr ""
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
-msgid "Connection speed in kb/s"
-msgstr ""
-
 msgid "Console"
 msgstr ""
 
@@ -2551,6 +2644,9 @@ msgstr ""
 
 #
 msgid "Continue playing"
+msgstr ""
+
+msgid "Continues"
 msgstr ""
 
 msgid "Continues play (loop)"
@@ -2632,11 +2728,6 @@ msgstr "Croat"
 msgid "Croatian"
 msgstr "Croat"
 
-#
-#, fuzzy
-msgid "Cross brightness"
-msgstr "Brillantor"
-
 msgid "Cuba"
 msgstr ""
 
@@ -2667,6 +2758,11 @@ msgstr ""
 #
 msgid "Current settings:"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Current status:"
+msgstr "Estat del sintonitzador"
 
 #
 #, fuzzy
@@ -2726,6 +2822,9 @@ msgstr "Txec"
 msgid "D"
 msgstr ""
 
+msgid "DAC"
+msgstr ""
+
 #
 msgid "DHCP"
 msgstr ""
@@ -2738,7 +2837,16 @@ msgstr "avançat"
 msgid "DMM normal"
 msgstr ""
 
+msgid "DTS"
+msgstr ""
+
+msgid "DTS HD downmix"
+msgstr ""
+
 msgid "DTS downmix"
+msgstr ""
+
+msgid "DTS/DTS-HD HR/DTS-HD MA/DTS:X"
 msgstr ""
 
 #
@@ -2783,9 +2891,6 @@ msgid "DVB-T"
 msgstr ""
 
 msgid "DVB-T2"
-msgstr ""
-
-msgid "DVD"
 msgstr ""
 
 msgid "DVD Burn"
@@ -2843,9 +2948,6 @@ msgstr "Apagat complet"
 #, fuzzy
 msgid "Deep standby"
 msgstr "Apagat complet"
-
-msgid "Deepstby LED brightness"
-msgstr ""
 
 #
 msgid "Default"
@@ -3052,14 +3154,17 @@ msgstr "Repetir DiSEqC"
 msgid "DiSEqC-tester settings"
 msgstr ""
 
-msgid "Dial number"
-msgstr ""
-
 msgid "Did you see all eight arrow heads?"
 msgstr ""
 
 #
 msgid "Digital contour removal"
+msgstr ""
+
+msgid "Dim delay"
+msgstr ""
+
+msgid "Dim the LCD after specified time."
 msgstr ""
 
 #
@@ -3095,15 +3200,15 @@ msgstr ""
 msgid "Disable current event but not coming events"
 msgstr ""
 
+msgid "Disable the HDD Process on VFD"
+msgstr ""
+
 msgid "Disable timer"
 msgstr ""
 
 #
 msgid "Disabled"
 msgstr "Desactivat"
-
-msgid "Dish"
-msgstr ""
 
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
@@ -3376,6 +3481,9 @@ msgstr "Descarregant"
 msgid "Downloading plugin information. Please wait..."
 msgstr "Descarregant informació del plugin. Espera..."
 
+msgid "Downmix"
+msgstr ""
+
 msgid "Drop unconfigured satellites"
 msgstr ""
 
@@ -3396,6 +3504,11 @@ msgstr ""
 
 msgid "EPG"
 msgstr ""
+
+#
+#, fuzzy
+msgid "EPG Selection"
+msgstr "Selecció EPG"
 
 msgid "EPG language selection 1"
 msgstr ""
@@ -3428,6 +3541,9 @@ msgid "East"
 msgstr "Est"
 
 msgid "East limit set"
+msgstr ""
+
+msgid "EasyMedia"
 msgstr ""
 
 msgid "Ecuador"
@@ -3504,6 +3620,12 @@ msgstr ""
 msgid "Enable 5V for active antenna"
 msgstr "Activar 5V per a antena activa"
 
+msgid "Enable CIHelper for slot CI0"
+msgstr ""
+
+msgid "Enable CIHelper for slot CI1"
+msgstr ""
+
 msgid "Enable EIT EPG"
 msgstr ""
 
@@ -3543,11 +3665,6 @@ msgstr ""
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "activar l'edició de la llista"
 
-#
-#, fuzzy
-msgid "Enable debug"
-msgstr "Activat"
-
 msgid "Enable fallback remote receiver"
 msgstr ""
 
@@ -3565,6 +3682,9 @@ msgid "Enable parental protection"
 msgstr ""
 
 msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
+msgstr ""
+
+msgid "Enable screenshot of LCD in /tmp"
 msgstr ""
 
 msgid "Enable teletext caching"
@@ -3638,6 +3758,9 @@ msgid "Enigma version: "
 msgstr "Nova versió:"
 
 msgid "Enigma2 skin selector"
+msgstr ""
+
+msgid "Enigmalight"
 msgstr ""
 
 msgid "Enter"
@@ -3778,6 +3901,11 @@ msgstr ""
 msgid "Estonian"
 msgstr ""
 
+#
+#, fuzzy
+msgid "EtPortal"
+msgstr "Portuguès"
+
 msgid "Ethernet network interface"
 msgstr ""
 
@@ -3894,6 +4022,9 @@ msgstr ""
 msgid "Expert settings"
 msgstr "Config OSD"
 
+msgid "Ext. NumberZap"
+msgstr ""
+
 msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
@@ -3960,6 +4091,12 @@ msgstr ""
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr ""
 
+msgid "F"
+msgstr ""
+
+msgid "F1/F3/F4/F4-TURBO"
+msgstr ""
+
 msgid "FAILED"
 msgstr ""
 
@@ -3983,6 +4120,9 @@ msgstr ""
 msgid ""
 "FBC automatic\n"
 "inactive"
+msgstr ""
+
+msgid "FCC 1953"
 msgstr ""
 
 #
@@ -4238,6 +4378,9 @@ msgstr ""
 msgid "Frontprocessor version: %s"
 msgstr ""
 
+msgid "Full Range RGB"
+msgstr ""
+
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
 msgid "Full screen"
 msgstr ""
@@ -4255,6 +4398,9 @@ msgid "Further Options"
 msgstr ""
 
 msgid "Further options"
+msgstr ""
+
+msgid "G"
 msgstr ""
 
 #
@@ -4409,6 +4555,9 @@ msgstr ""
 msgid "GraphMultiEpg Settings"
 msgstr ""
 
+msgid "Graphical EPG"
+msgstr ""
+
 #
 msgid "Graphical Multi EPG"
 msgstr ""
@@ -4458,7 +4607,16 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
+msgid "H"
+msgstr ""
+
 msgid "HD list"
+msgstr ""
+
+msgid "HD2400"
+msgstr ""
+
+msgid "HDMI"
 msgstr ""
 
 msgid "HDMI Colordepth"
@@ -4486,6 +4644,9 @@ msgid "HDR10"
 msgstr ""
 
 msgid "HDR10 support"
+msgstr ""
+
+msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 msgstr ""
 
 msgid "HELP"
@@ -4540,9 +4701,6 @@ msgid "Hebrew"
 msgstr ""
 
 msgid "Helps setting up your antenna"
-msgstr ""
-
-msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
 msgstr ""
 
 msgid "Hidden network"
@@ -4652,12 +4810,18 @@ msgstr "Hongarès"
 msgid "Hungary"
 msgstr "Hongarès"
 
+msgid "I"
+msgstr ""
+
 #
 #, fuzzy
 msgid "I do not want to perform any service scans"
 msgstr "Vols fer una recerca de canals?"
 
 msgid "IDLE"
+msgstr ""
+
+msgid "IMDB Search"
 msgstr ""
 
 msgid "INFO"
@@ -4704,6 +4868,9 @@ msgid "If set as 'Yes', then audiofiles are played in 'list mode' only, instead 
 msgstr ""
 
 msgid "If set to 'yes' signal values (SNR, etc) will be calculated from API V3. This is an old API version that has now been superseded."
+msgstr ""
+
+msgid "If the text is too long to be displayed on the front panel, it will be repeated (number of times):"
 msgstr ""
 
 msgid "If using multiple uncommitted switches the DiSEqC commands must be sent multiple times. Set to the number of uncommitted switches in the chain minus one."
@@ -4836,11 +5003,6 @@ msgstr "Barra d'informació"
 msgid "Info bar timeout"
 msgstr "Temps d'aparició de la barra d'informació"
 
-#
-#, fuzzy
-msgid "InfoBar"
-msgstr "Barra d'informació"
-
 msgid "Infobar frontend data source"
 msgstr ""
 
@@ -4971,9 +5133,6 @@ msgstr "Flash interna"
 msgid "Internal hdd only"
 msgstr ""
 
-msgid "Internet connection sharing"
-msgstr ""
-
 msgid "Interval between keys when repeating:"
 msgstr ""
 
@@ -5053,6 +5212,9 @@ msgstr ""
 msgid "Items per page for list screen"
 msgstr ""
 
+msgid "J"
+msgstr ""
+
 msgid "Jamaica"
 msgstr ""
 
@@ -5129,12 +5291,6 @@ msgstr "Mapa del teclat"
 msgid "Keyboard setup"
 msgstr "Configuració teclat"
 
-msgid "Keymap"
-msgstr ""
-
-msgid "Keymaps found: (press green or ok to select)"
-msgstr ""
-
 msgid "Kiribati"
 msgstr ""
 
@@ -5158,37 +5314,47 @@ msgstr ""
 msgid "LAN connection"
 msgstr ""
 
-#
-#, fuzzy
-msgid "LED Display Setup"
-msgstr "Configurar Display"
-
-#
-#, fuzzy
-msgid "LED configuration"
-msgstr "Configuració del sintonitzador"
-
-msgid "LED control"
-msgstr ""
-
-msgid "LED control for Fortis HS7110"
-msgstr ""
-
-msgid "LED control for Fortis HS7810A"
-msgstr ""
-
-msgid "LED display"
+msgid "LCD scroll speed"
 msgstr ""
 
 #
 #, fuzzy
-msgid "LED display configuration"
-msgstr "Configuració del sintonitzador"
+msgid "LED Deep Standby"
+msgstr "Apagat complet"
+
+msgid "LED Normal"
+msgstr ""
 
 #
 #, fuzzy
-msgid "LED display configuration for Fortis HS7810A"
-msgstr "Configuració del sintonitzador"
+msgid "LED Standby"
+msgstr "Repòs"
+
+msgid "LED brightness during deep standby."
+msgstr ""
+
+msgid "LED brightness during normal operations."
+msgstr ""
+
+msgid "LED brightness during standby."
+msgstr ""
+
+msgid "LED color during normal operations"
+msgstr ""
+
+msgid "LED color during recording"
+msgstr ""
+
+msgid "LED color during recording in standby"
+msgstr ""
+
+msgid "LED color during standby"
+msgstr ""
+
+#
+#, fuzzy
+msgid "LED setup"
+msgstr "Configuració PiP"
 
 #
 msgid "LNB"
@@ -5403,16 +5569,6 @@ msgstr ""
 msgid "Logfile does not exist anymore"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Logo brightness"
-msgstr "Brillantor"
-
-#
-#, fuzzy
-msgid "Logo brightness *"
-msgstr "Brillantor"
-
 msgid "Long filenames"
 msgstr ""
 
@@ -5428,6 +5584,9 @@ msgstr "Longitud"
 msgid "Loop through from"
 msgstr ""
 
+msgid "Lower Framerate save CPU Time"
+msgstr ""
+
 msgid "Lower case"
 msgstr ""
 
@@ -5435,9 +5594,6 @@ msgid "Luxembourg"
 msgstr ""
 
 msgid "Luxembourgish"
-msgstr ""
-
-msgid "MENU"
 msgstr ""
 
 #
@@ -5448,12 +5604,6 @@ msgstr "Tarja MMC"
 #
 msgid "MORE"
 msgstr "MÉS"
-
-msgid "MRU"
-msgstr ""
-
-msgid "MTU"
-msgstr ""
 
 msgid "Macao"
 msgstr ""
@@ -5607,16 +5757,6 @@ msgstr "Menú"
 msgid "Menusort (%s)"
 msgstr ""
 
-#, python-format
-msgid ""
-"Merlin Enigma2 Keymapselector v%s\n"
-"\n"
-"If you experience any problems please contact\n"
-"www.dreambox-tools.info\n"
-"\n"
-"2009-2012 DarkVolli"
-msgstr ""
-
 #
 msgid "Message"
 msgstr "Missatge"
@@ -5634,6 +5774,12 @@ msgid "Mexico"
 msgstr ""
 
 msgid "Micronesia (Federated States of)"
+msgstr ""
+
+msgid "MiniTV"
+msgstr ""
+
+msgid "MiniTV with OSD"
 msgstr ""
 
 #, python-format
@@ -5666,21 +5812,6 @@ msgstr "Mode"
 #
 msgid "Model: "
 msgstr "Model: "
-
-#
-#, fuzzy
-msgid "Modem configuration"
-msgstr "Configuració del sintonitzador"
-
-#
-#, fuzzy
-msgid "Modem settings"
-msgstr "Config A/V"
-
-#
-#, fuzzy
-msgid "Modem type"
-msgstr "Mode test"
 
 #
 msgid "Modulation"
@@ -5751,11 +5882,6 @@ msgstr "Moure Picture in Picture"
 #
 msgid "Move east"
 msgstr "Moure a l'est"
-
-#
-#, fuzzy
-msgid "Move main picture to PiP"
-msgstr "Moure Picture in Picture"
 
 msgid "Move the text buffer cursor left"
 msgstr ""
@@ -5836,9 +5962,6 @@ msgstr ""
 #
 msgid "Multi EPG"
 msgstr "Multi EPG"
-
-msgid "Multi channel downmix"
-msgstr ""
 
 msgid "Multi-EPG bouquet selection"
 msgstr ""
@@ -6244,9 +6367,6 @@ msgstr "Compact Flash"
 msgid "Normal mode"
 msgstr ""
 
-msgid "Normal running frequency"
-msgstr ""
-
 #
 msgid "North"
 msgstr "Nord"
@@ -6306,12 +6426,6 @@ msgstr ""
 msgid "Now playing"
 msgstr "Reproduint"
 
-msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
-msgstr ""
-
-msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
-msgstr ""
-
 #
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr ""
@@ -6332,10 +6446,10 @@ msgstr "Bé"
 msgid "ONID"
 msgstr ""
 
-msgid "OSD 3D setup"
+msgid "OSD"
 msgstr ""
 
-msgid "OSD Adjustment"
+msgid "OSD 3D setup"
 msgstr ""
 
 msgid "OSD name request"
@@ -6406,16 +6520,6 @@ msgstr ""
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
-#
-#, fuzzy
-msgid "Open channel list"
-msgstr "canal següent en l'històric"
-
-#
-#, fuzzy
-msgid "Open current transponder"
-msgstr "Transponedor predefinit"
-
 msgid "Open select location"
 msgstr ""
 
@@ -6477,6 +6581,11 @@ msgstr "PAL"
 msgid "PCM"
 msgstr ""
 
+#
+#, fuzzy
+msgid "PCM Multichannel"
+msgstr "Canal"
+
 msgid "PCR PID"
 msgstr ""
 
@@ -6494,7 +6603,10 @@ msgstr ""
 msgid "PIN code needed"
 msgstr "Cal un codi pin"
 
-msgid "PLAY"
+msgid "PIP"
+msgstr ""
+
+msgid "PIP with OSD"
 msgstr ""
 
 msgid "PLP ID"
@@ -6507,9 +6619,6 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Mode"
-
-msgid "PLUGINS"
-msgstr ""
 
 msgid "PMT PID"
 msgstr ""
@@ -6574,6 +6683,9 @@ msgstr "Editor dels canals del control parental"
 #
 msgid "Parental control setup"
 msgstr "Configuració control parental"
+
+msgid "Passthrough"
+msgstr ""
 
 msgid "Password"
 msgstr ""
@@ -6693,12 +6805,6 @@ msgstr ""
 msgid "Play recorded movies..."
 msgstr "Reproduir pel·lícules gravades..."
 
-msgid "Play with exteplayer"
-msgstr ""
-
-msgid "Play with gstreamer"
-msgstr ""
-
 #
 msgid "Please add titles to the compilation."
 msgstr ""
@@ -6794,11 +6900,6 @@ msgstr "Sisplau selecciona una llista..."
 
 #
 #, fuzzy
-msgid "Please select a resolution..."
-msgstr "Sisplau selecciona un subservei..."
-
-#
-#, fuzzy
 msgid "Please select a sub service..."
 msgstr "Sisplau selecciona un subservei..."
 
@@ -6808,16 +6909,6 @@ msgstr "Sisplau selecciona un subservei a gravar..."
 
 #
 msgid "Please select a subservice..."
-msgstr "Sisplau selecciona un subservei..."
-
-#
-#, fuzzy
-msgid "Please select an 3D modus..."
-msgstr "Sisplau selecciona un subservei..."
-
-#
-#, fuzzy
-msgid "Please select an aspect ratio..."
 msgstr "Sisplau selecciona un subservei..."
 
 #
@@ -6988,9 +7079,6 @@ msgstr ""
 msgid "Plugin manager help"
 msgstr ""
 
-msgid "Plugin to set settings for modem connection."
-msgstr ""
-
 #
 msgid "Plugins"
 msgstr ""
@@ -7065,10 +7153,22 @@ msgstr "Configuració del motor"
 msgid "Positioner setup log"
 msgstr ""
 
-msgid "Power"
+msgid "Power LED State in Deep-Standby"
 msgstr ""
 
-msgid "Power LED"
+msgid "Power LED State in Standby"
+msgstr ""
+
+msgid "Power LED can be turned on or off here."
+msgstr ""
+
+msgid "Power LED state during deep-standby."
+msgstr ""
+
+msgid "Power LED state during standby."
+msgstr ""
+
+msgid "Power On Display"
 msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
@@ -7356,13 +7456,21 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Quick EPG"
+msgstr "Zappeig ràpid"
+
+#
+#, fuzzy
 msgid "Quick zap"
 msgstr "Zappeig ràpid"
 
 #
 #, fuzzy
-msgid "RC command set"
-msgstr "Ordre de comanda"
+msgid "REC"
+msgstr "FEC"
+
+msgid "REC "
+msgstr ""
 
 #
 msgid "RF output"
@@ -7404,6 +7512,9 @@ msgstr "Vols esborrar les programacions ja finalitzades?"
 msgid "Really exit the subservices quickzap?"
 msgstr "Sortir del zappeig ràpid dels subserveis?"
 
+msgid "Really reboot into Recovery Mode?"
+msgstr ""
+
 #
 msgid "Really reboot now?"
 msgstr ""
@@ -7432,10 +7543,8 @@ msgstr ""
 msgid "Reboot"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Rec LED brightness"
-msgstr "Brillantor"
+msgid "Rec"
+msgstr ""
 
 msgid "Recall to previous service"
 msgstr ""
@@ -7447,11 +7556,6 @@ msgstr "Configuració de recepció"
 
 #
 msgid "Record"
-msgstr "Gravar"
-
-#
-#, fuzzy
-msgid "Record only"
 msgstr "Gravar"
 
 #
@@ -7491,6 +7595,11 @@ msgstr ""
 #
 msgid "Recordings always have priority"
 msgstr "Les gravacions tenen prioritat"
+
+#
+#, fuzzy
+msgid "Recovery Mode"
+msgstr "Definit per l'usuari"
 
 msgid "Red"
 msgstr ""
@@ -7850,6 +7959,9 @@ msgstr ""
 msgid "Round start time on"
 msgstr ""
 
+msgid "Running"
+msgstr ""
+
 #
 msgid "Russian"
 msgstr "Rus"
@@ -7863,9 +7975,6 @@ msgstr ""
 #
 msgid "S-Video"
 msgstr "S-Vídeo"
-
-msgid "SCAN"
-msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr ""
@@ -7881,14 +7990,6 @@ msgstr ""
 
 msgid "SDR"
 msgstr ""
-
-msgid "SETUP"
-msgstr ""
-
-#
-#, fuzzy
-msgid "SH4 OSD Position setup"
-msgstr "Configuració del motor"
 
 #
 msgid "SINGLE LAYER DVD"
@@ -8106,11 +8207,6 @@ msgstr ""
 msgid "Scan your network for wireless access points and connect to them using your selected wireless device.\n"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Scanning"
-msgstr "Escaneig"
-
 #, python-format
 msgid "Scanning %s..."
 msgstr ""
@@ -8138,19 +8234,19 @@ msgstr ""
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr ""
 
+msgid "Screenshot of LCD in /tmp"
+msgstr ""
+
 msgid "Scroll delay"
-msgstr ""
-
-msgid "Scroll long strings"
-msgstr ""
-
-msgid "Scroll pause"
 msgstr ""
 
 msgid "Scroll repeats"
 msgstr ""
 
-msgid "Scroll text"
+msgid "Scrolling delay (software renderer)"
+msgstr ""
+
+msgid "Scrolling speed (software renderer)"
 msgstr ""
 
 #
@@ -8705,6 +8801,9 @@ msgstr "Canals"
 msgid "Set CI assignment for detection of available services."
 msgstr ""
 
+msgid "Set Framerate for MiniTV"
+msgstr ""
+
 msgid "Set PIN"
 msgstr ""
 
@@ -8728,9 +8827,6 @@ msgstr ""
 msgid "Set end time"
 msgstr "Hora final"
 
-msgid "Set fan"
-msgstr ""
-
 msgid "Set fixed"
 msgstr ""
 
@@ -8743,11 +8839,6 @@ msgstr ""
 #
 msgid "Set interface as default Interface"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Set led"
-msgstr "Hora final"
 
 msgid "Set limits"
 msgstr ""
@@ -8769,10 +8860,19 @@ msgstr ""
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr ""
 
+msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner"
+msgstr ""
+
+msgid "Set the scrolling speed of text on the front display, this is used by software renderer in some skins."
+msgstr ""
+
+msgid "Set the scrolling speed of text on the front display."
 msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -8853,6 +8953,9 @@ msgstr ""
 msgid "Show CI messages"
 msgstr ""
 
+msgid "Show Display Icons"
+msgstr ""
+
 msgid "Show EIT now/next in infobar"
 msgstr ""
 
@@ -8866,19 +8969,33 @@ msgstr "Mostrar la barra en canviar el programa"
 msgid "Show EPG..."
 msgstr "mostrar EPG..."
 
+msgid "Show Games show"
+msgstr ""
+
 #
 #, fuzzy
-msgid "Show Ethernet activity"
-msgstr "mostrar alternatives"
+msgid "Show HDD progress"
+msgstr "Progrés d'execució:"
 
-msgid "Show Games show"
+msgid "Show HDMI Output Resulution"
+msgstr ""
+
+msgid "Show HDMI-Output Res"
 msgstr ""
 
 msgid "Show InfoBar"
 msgstr ""
 
+msgid "Show MiniTV in the Front Display"
+msgstr ""
+
 msgid "Show PIP"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Show PIP in the Front Display"
+msgstr "Reproductor de ràdio..."
 
 msgid "Show SNR percentage instead of dB value"
 msgstr ""
@@ -8909,11 +9026,6 @@ msgstr ""
 
 msgid "Show channel numbers in channel selection"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Show clock"
-msgstr "desbloquejat"
 
 msgid "Show columns"
 msgstr ""
@@ -8953,19 +9065,11 @@ msgstr "veure extensions..."
 msgid "Show favourites list"
 msgstr ""
 
-msgid "Show green LED on VFD"
-msgstr ""
-
 msgid "Show help"
 msgstr ""
 
 msgid "Show icon for new/unseen items"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Show icons"
-msgstr "veure extensions..."
 
 msgid "Show in extensions menu"
 msgstr ""
@@ -9024,21 +9128,6 @@ msgstr ""
 msgid "Show notification when import channels was successful"
 msgstr ""
 
-msgid "Show on LED display"
-msgstr ""
-
-msgid "Show on LED display in standby"
-msgstr ""
-
-msgid "Show on VFD"
-msgstr ""
-
-msgid "Show on VFD display"
-msgstr ""
-
-msgid "Show on VFD display in standby"
-msgstr ""
-
 msgid "Show packages to be upgraded"
 msgstr ""
 
@@ -9061,8 +9150,10 @@ msgstr ""
 msgid "Show record indicator"
 msgstr ""
 
-msgid "Show red LED on VFD"
-msgstr ""
+#
+#, fuzzy
+msgid "Show recording symbol"
+msgstr "aquesta gravació"
 
 msgid "Show screensaver"
 msgstr ""
@@ -9111,9 +9202,6 @@ msgstr "Reproductor de ràdio..."
 msgid "Show the tv player..."
 msgstr "Mostrar el reproductor de tv..."
 
-msgid "Show this plugin in plugin menu"
-msgstr ""
-
 msgid "Show vertical timelines"
 msgstr ""
 
@@ -9143,9 +9231,6 @@ msgid "Shutdown"
 msgstr ""
 
 msgid "Shutdown when in Standby"
-msgstr ""
-
-msgid "Side by Side"
 msgstr ""
 
 msgid "Side by side"
@@ -9304,6 +9389,12 @@ msgstr ""
 msgid "Smooth"
 msgstr ""
 
+msgid "Smpte 170M"
+msgstr ""
+
+msgid "Smpte 240M"
+msgstr ""
+
 msgid "Social/Political/Economics"
 msgstr ""
 
@@ -9345,9 +9436,7 @@ msgstr ""
 msgid "Some plugins are not available:\n"
 msgstr "Alguns plugins no estan disponibles:\n"
 
-msgid ""
-"Sorry!\n"
-"Picture in Picture is not available in HD channels!"
+msgid "Sorry CIHelper config is missing"
 msgstr ""
 
 #, python-format
@@ -9442,14 +9531,6 @@ msgstr ""
 msgid "Spanish"
 msgstr "Espanyol"
 
-msgid "Spark7162 select tuner mode"
-msgstr ""
-
-#
-#, fuzzy
-msgid "SparkUnionTunerType config"
-msgstr "Configuració del sintonitzador"
-
 msgid "Special 1"
 msgstr ""
 
@@ -9484,9 +9565,6 @@ msgid "Specify timeframe to ignore inactivity sleeptimer"
 msgstr ""
 
 msgid "Specify timeframe to ignore the shutdown in standby"
-msgstr ""
-
-msgid "Speed"
 msgstr ""
 
 #
@@ -9527,11 +9605,6 @@ msgstr "Repòs"
 msgid "Standby after current event"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Standby brightness"
-msgstr "Brillantor"
-
 #, python-format
 msgid "Standby fan %d PWM"
 msgstr ""
@@ -9545,19 +9618,8 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Standby only"
-msgstr "Repòs"
-
-msgid "Standby saver frequency"
-msgstr ""
-
-#
-#, fuzzy
-msgid "Start Boot Frequency"
-msgstr "Freqüència"
-
-msgid "Start boot frequency"
-msgstr ""
+msgid "Start"
+msgstr "Hora inici"
 
 #
 msgid "Start from the beginning"
@@ -9608,11 +9670,6 @@ msgstr ""
 
 msgid "Startup to Standby"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Stby LED brightness"
-msgstr "Brillantor"
 
 #
 msgid "Step east"
@@ -9966,6 +10023,9 @@ msgstr ""
 msgid "TSID"
 msgstr ""
 
+msgid "TUNER:"
+msgstr ""
+
 msgid "TUNING"
 msgstr ""
 
@@ -10004,11 +10064,6 @@ msgstr "Control parental"
 #
 msgid "Terrestrial"
 msgstr "Terrestre"
-
-#
-#, fuzzy
-msgid "Test"
-msgstr "Mode test"
 
 #
 msgid "Test DiSEqC settings"
@@ -10237,10 +10292,16 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can to set the auto volume level."
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
 msgid "This option allows you enable the vertical scaler dejagging."
+msgstr ""
+
+msgid "This option allows you to Power Off the display."
 msgstr ""
 
 msgid "This option allows you to add the softcam setup in the extensions menu."
@@ -10255,6 +10316,9 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
+msgid "This option allows you to change the virtuell loadspeaker position."
+msgstr ""
+
 msgid "This option allows you to configure the Colordepth for UHD"
 msgstr ""
 
@@ -10265,6 +10329,15 @@ msgid "This option allows you to configure the Colorspace from Auto to RGB"
 msgstr ""
 
 msgid "This option allows you to configure the HDR type."
+msgstr ""
+
+msgid "This option allows you to disable or change the virtuell loadspeaker position."
+msgstr ""
+
+msgid "This option allows you to enable 3D surround softlimiter."
+msgstr ""
+
+msgid "This option allows you to enable 3D surround sound."
 msgstr ""
 
 msgid "This option allows you to enable or disable the 10 bit color mode"
@@ -10418,10 +10491,8 @@ msgstr "Dijous"
 msgid "Time"
 msgstr "Hora"
 
-#
-#, fuzzy
-msgid "Time mode"
-msgstr "Mode del to"
+msgid "Time for next LCD scrolling"
+msgstr ""
 
 #
 #, fuzzy
@@ -10479,6 +10550,16 @@ msgstr ""
 #, fuzzy
 msgid "Timer type"
 msgstr "Tipus de gravació"
+
+#
+#, fuzzy
+msgid "Timer+"
+msgstr "Programació"
+
+#
+#, fuzzy
+msgid "Timerlist"
+msgstr "Editar hora"
 
 #
 msgid "Timeshift"
@@ -10585,9 +10666,6 @@ msgid "Toneburst A/B"
 msgstr "Toneburst A/B"
 
 msgid "Tonga"
-msgstr ""
-
-msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
@@ -10763,12 +10841,6 @@ msgstr "Tipus de recerca"
 msgid "Type of scan"
 msgstr "Tipus de recerca"
 
-msgid "Typematic delay"
-msgstr ""
-
-msgid "Typematic rate"
-msgstr ""
-
 msgid "UNKNOWN"
 msgstr ""
 
@@ -10853,14 +10925,6 @@ msgstr ""
 msgid "Uninstall"
 msgstr ""
 
-msgid "UnionTunerType"
-msgstr ""
-
-#
-#, fuzzy
-msgid "UnionTunerType config"
-msgstr "Configuració del sintonitzador"
-
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -10900,9 +10964,6 @@ msgstr "Descarregant"
 
 #
 msgid "Update"
-msgstr ""
-
-msgid "Update Date/Time"
 msgstr ""
 
 msgid "Update and ask to reboot"
@@ -10948,11 +11009,6 @@ msgstr "Actualitzant"
 
 msgid "Upper case"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Uppercase letters only"
-msgstr "canal següent en l'històric"
 
 msgid "Uruguay"
 msgstr ""
@@ -11106,11 +11162,6 @@ msgstr ""
 msgid "User interface"
 msgstr "Definit per l'usuari"
 
-#
-#, fuzzy
-msgid "Username"
-msgstr "Definit per l'usuari"
-
 #, python-format
 msgid "Using LNB %d"
 msgstr ""
@@ -11132,46 +11183,10 @@ msgstr ""
 msgid "VCR scart"
 msgstr "Euroconnector VCR"
 
-#
-#, fuzzy
-msgid "VFD brightness"
-msgstr "Brillantor"
-
-msgid "VFD configuration for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD configuration for Fortis HS8200"
-msgstr ""
-
-#
-#, fuzzy
-msgid "VFD display"
-msgstr "amagar reproductor"
-
-#
-#, fuzzy
-msgid "VFD display configuration"
-msgstr "Configuració del sintonitzador"
-
-msgid "VFD display configuration for Fortis HS742X"
-msgstr ""
-
-msgid "VFD display configuration for Fortis HS9510"
-msgstr ""
-
-msgid "VFD-Icons for Fortis FS9000/9200"
-msgstr ""
-
-msgid "VFD-Icons for Fortis HS7420 & HS7429"
-msgstr ""
-
-msgid "VFD-Icons for Fortis HS8200"
-msgstr ""
-
-msgid "VFD-Icons for Fortis HS9510"
-msgstr ""
-
 msgid "VLAN connection"
+msgstr ""
+
+msgid "VMC"
 msgstr ""
 
 #
@@ -11182,6 +11197,9 @@ msgid "VOB File"
 msgstr ""
 
 msgid "VOB file"
+msgstr ""
+
+msgid "VU+"
 msgstr ""
 
 #
@@ -11370,6 +11388,12 @@ msgid "WEP"
 msgstr ""
 
 msgid "WLAN connection"
+msgstr ""
+
+msgid "WMA Pro"
+msgstr ""
+
+msgid "WMA Pro downmix"
 msgstr ""
 
 #
@@ -11785,9 +11809,6 @@ msgstr ""
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 #
 msgid "Year"
 msgstr "Any"
@@ -11860,6 +11881,12 @@ msgid ""
 "You already have a channel list installed,\n"
 "would you like to remove\n"
 "\"%s\"?"
+msgstr ""
+
+msgid "You can Display MiniTV with or without OSD Menu"
+msgstr ""
+
+msgid "You can Display PIP with or without OSD Menu"
 msgstr ""
 
 #
@@ -11947,6 +11974,9 @@ msgid ""
 "This may take a few minutes"
 msgstr ""
 
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
+
 #
 msgid ""
 "Your internet connection is not working!\n"
@@ -11986,6 +12016,9 @@ msgid ""
 msgstr ""
 
 msgid "Your receiver is rebooting"
+msgstr ""
+
+msgid "Your receiver is rebooting into Recovery Mode"
 msgstr ""
 
 msgid "Your receiver is shutting down"
@@ -12063,6 +12096,15 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Zapped to timer service %s!"
 msgstr "Protegir canals"
+
+msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma H9/i55 Plus"
+msgstr ""
+
+msgid "Zgemma Star S/2S/H1/H2"
+msgstr ""
 
 msgid "Zimbabwe"
 msgstr ""
@@ -12194,6 +12236,11 @@ msgstr ""
 msgid "and select previous channel"
 msgstr ""
 
+#
+#, fuzzy
+msgid "any recordings"
+msgstr "Iniciar gravació?"
+
 msgid "are you sure to cancel all changes"
 msgstr ""
 
@@ -12201,9 +12248,6 @@ msgid "arts/culture (without music, general)"
 msgstr ""
 
 msgid "arts/culture magazine"
-msgstr ""
-
-msgid "atevio7500"
 msgstr ""
 
 msgid "athletics"
@@ -12252,9 +12296,6 @@ msgstr ""
 msgid "blacklist"
 msgstr "llista negra"
 
-msgid "blank"
-msgstr ""
-
 #
 msgid "blue"
 msgstr ""
@@ -12268,15 +12309,8 @@ msgstr ""
 msgid "by date"
 msgstr ""
 
-#
-#, fuzzy
-msgid "cable"
-msgstr "Cable"
-
-#
-#, fuzzy
-msgid "cancel"
-msgstr "Cancel·lar"
+msgid "by hmmmdada"
+msgstr ""
 
 msgid "cartoon/puppets"
 msgstr ""
@@ -12288,22 +12322,6 @@ msgid "centered"
 msgstr ""
 
 msgid "centered, wrapped"
-msgstr ""
-
-msgid "change sides"
-msgstr ""
-
-#
-#, fuzzy
-msgid "channel name"
-msgstr "canal següent en l'històric"
-
-#
-#, fuzzy
-msgid "channel number"
-msgstr "canal següent en l'històric"
-
-msgid "channel number and name"
 msgstr ""
 
 #
@@ -12342,10 +12360,16 @@ msgstr ""
 msgid "connected"
 msgstr ""
 
-msgid "continuous"
+msgid "controlled by HDMI"
 msgstr ""
 
-msgid "controlled by HDMI"
+msgid "convert to AC3"
+msgstr ""
+
+msgid "convert to DTS"
+msgstr ""
+
+msgid "convert to multi-channel PCM"
 msgstr ""
 
 msgid "cooking"
@@ -12359,21 +12383,12 @@ msgstr "copiar a les llistes"
 msgid "create directory"
 msgstr ""
 
-msgid "cuberevo"
-msgstr ""
-
 #
 msgid "daily"
 msgstr "diàriament"
 
-msgid "date"
-msgstr ""
-
 #
 msgid "day"
-msgstr ""
-
-msgid "day and date"
 msgstr ""
 
 msgid "default"
@@ -12502,10 +12517,22 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
-msgid "execute cuts (requires MovieCut plugin)"
+msgid "et4000"
 msgstr ""
 
-msgid "exit "
+msgid "et5000/6000"
+msgstr ""
+
+msgid "et8000/et10000"
+msgstr ""
+
+msgid "et9000/et9100"
+msgstr ""
+
+msgid "et9200/9500/6500"
+msgstr ""
+
+msgid "execute cuts (requires MovieCut plugin)"
 msgstr ""
 
 #
@@ -12523,6 +12550,12 @@ msgstr ""
 msgid "experimental film/video"
 msgstr ""
 
+msgid "extra wide"
+msgstr ""
+
+msgid "extrawide"
+msgstr ""
+
 msgid "failed"
 msgstr ""
 
@@ -12530,6 +12563,9 @@ msgid "false"
 msgstr ""
 
 msgid "fashion"
+msgstr ""
+
+msgid "fast"
 msgstr ""
 
 #
@@ -12564,6 +12600,9 @@ msgstr ""
 msgid "football/soccer"
 msgstr ""
 
+msgid "force AC3plus"
+msgstr ""
+
 #
 #, fuzzy
 msgid "force disabled"
@@ -12586,14 +12625,6 @@ msgid "free"
 msgstr ""
 
 msgid "from"
-msgstr ""
-
-#
-#, fuzzy
-msgid "fs9000VFD display"
-msgstr "amagar reproductor"
-
-msgid "fs9000VFD-Icons"
 msgstr ""
 
 msgid "further education"
@@ -12631,55 +12662,9 @@ msgstr ""
 msgid "help..."
 msgstr "ajuda..."
 
-msgid "hl101"
-msgstr ""
-
 #
 msgid "horizontal"
 msgstr "horitzontal"
-
-msgid "hs7110"
-msgstr ""
-
-msgid "hs7110VFD control"
-msgstr ""
-
-#
-#, fuzzy
-msgid "hs7110VFD display"
-msgstr "amagar reproductor"
-
-#
-#, fuzzy
-msgid "hs742xVFD display"
-msgstr "amagar reproductor"
-
-msgid "hs742xVFD-Icons"
-msgstr ""
-
-#
-#, fuzzy
-msgid "hs7810aVFD display"
-msgstr "amagar reproductor"
-
-msgid "hs7810aVFD-Icons"
-msgstr ""
-
-#
-#, fuzzy
-msgid "hs8200VFD display"
-msgstr "amagar reproductor"
-
-msgid "hs8200VFD-Icons"
-msgstr ""
-
-#
-#, fuzzy
-msgid "hs9510VFD display"
-msgstr "amagar reproductor"
-
-msgid "hs9510VFD-Icons"
-msgstr ""
 
 #
 #, fuzzy
@@ -12709,12 +12694,6 @@ msgstr ""
 msgid "insert mark here"
 msgstr "inserir marca aquí"
 
-#, python-format
-msgid ""
-"installed keymap \"%s\"\n"
-"activate now keymap \"%s\"?"
-msgstr ""
-
 msgid "invalid type"
 msgstr ""
 
@@ -12738,9 +12717,6 @@ msgstr ""
 #
 msgid "leave movie player..."
 msgstr "sortir del reproductor de pel·lícules..."
-
-msgid "leddisplay.png"
-msgstr ""
 
 #
 msgid "left"
@@ -12807,6 +12783,11 @@ msgstr "menú"
 
 #
 msgid "mins"
+msgstr "minuts"
+
+#
+#, fuzzy
+msgid "minute"
 msgstr "minuts"
 
 #
@@ -12890,6 +12871,9 @@ msgstr ""
 msgid "no channel list"
 msgstr ""
 
+msgid "no delay"
+msgstr ""
+
 #
 msgid "no module found"
 msgstr "no hi ha el mòdul"
@@ -12928,16 +12912,8 @@ msgid "not_tested"
 msgstr ""
 
 #
-#, fuzzy
-msgid "nothing"
-msgstr "no facis res"
-
-#
 msgid "nothing connected"
 msgstr "res connectat"
-
-msgid "octagon1008"
-msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -12975,9 +12951,6 @@ msgstr ""
 msgid "only from standby"
 msgstr ""
 
-msgid "open Info..."
-msgstr ""
-
 #
 msgid "open nameserver configuration"
 msgstr ""
@@ -12986,9 +12959,6 @@ msgid "original"
 msgstr ""
 
 msgid "original language"
-msgstr ""
-
-msgid "partial"
 msgstr ""
 
 #
@@ -13002,9 +12972,6 @@ msgid "performing arts"
 msgstr ""
 
 msgid "play as picture in picture"
-msgstr ""
-
-msgid "play file when add in empty playlist"
 msgstr ""
 
 msgid "play in mainwindow"
@@ -13026,6 +12993,19 @@ msgstr ""
 
 msgid "purge deleted userbouquets"
 msgstr ""
+
+msgid "real or pseudo recordings"
+msgstr ""
+
+#
+#, fuzzy
+msgid "real recordings"
+msgstr "Iniciar gravació?"
+
+#
+#, fuzzy
+msgid "real recordings or streaming"
+msgstr "canviar la gravació (durada)"
 
 msgid "receiver software because updates are available."
 msgstr ""
@@ -13144,9 +13124,6 @@ msgstr ""
 msgid "running"
 msgstr ""
 
-msgid "save"
-msgstr ""
-
 #
 msgid "save last directory on exit"
 msgstr ""
@@ -13171,15 +13148,7 @@ msgid "select"
 msgstr ""
 
 #
-#, fuzzy
-msgid "select "
-msgstr "Seleccionar disc dur"
-
-#
 msgid "select CAId's"
-msgstr ""
-
-msgid "select Info..."
 msgstr ""
 
 #
@@ -13201,9 +13170,6 @@ msgid "service off-air"
 msgstr "afegir el canal als preferits"
 
 msgid "set as startup service"
-msgstr ""
-
-msgid "set default"
 msgstr ""
 
 #
@@ -13288,6 +13254,9 @@ msgstr ""
 msgid "slot%s - %s, without backup"
 msgstr ""
 
+msgid "slow"
+msgstr ""
+
 msgid "soap/melodram/folkloric"
 msgstr ""
 
@@ -13298,9 +13267,6 @@ msgid "social/spiritual science"
 msgstr ""
 
 msgid "sorting of playlists"
-msgstr ""
-
-msgid "spark"
 msgstr ""
 
 msgid "special events"
@@ -13379,14 +13345,6 @@ msgstr ""
 msgid "tennis/squash"
 msgstr ""
 
-#
-#, fuzzy
-msgid "terrestrial"
-msgstr "Terrestre"
-
-msgid "tf7700"
-msgstr ""
-
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
 
@@ -13397,20 +13355,6 @@ msgstr "aquesta gravació"
 #
 msgid "this service is protected by a parental control pin"
 msgstr "aquest canal està protegit per un pin de control parental"
-
-#
-#, fuzzy
-msgid "time"
-msgstr "Hora final"
-
-msgid "time (with seconds)"
-msgstr ""
-
-msgid "time (without seconds)"
-msgstr ""
-
-msgid "time and date"
-msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"
@@ -13429,9 +13373,6 @@ msgstr ""
 #, fuzzy
 msgid "type"
 msgstr "Mode test"
-
-msgid "ufs912"
-msgstr ""
 
 msgid "unavailable"
 msgstr ""
@@ -13464,6 +13405,12 @@ msgstr ""
 msgid "until standby/restart"
 msgstr ""
 
+msgid "use best / controlled by HDMI"
+msgstr ""
+
+msgid "use_hdmi_cacenter"
+msgstr ""
+
 #
 msgid "user defined"
 msgstr "definit per l'usuari"
@@ -13474,9 +13421,6 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "vertical"
-
-msgid "vfddisplay.png"
-msgstr ""
 
 #
 msgid "wait for ci..."
@@ -13507,6 +13451,9 @@ msgid "when PiPzap enabled zap channel up..."
 msgstr ""
 
 msgid "white"
+msgstr ""
+
+msgid "wide"
 msgstr ""
 
 msgid "width"
@@ -13540,6 +13487,9 @@ msgstr ""
 msgid "working"
 msgstr ""
 
+msgid "xp1000"
+msgstr ""
+
 #
 msgid "yellow"
 msgstr ""
@@ -13552,9 +13502,6 @@ msgstr "si"
 msgid "yes (keep feeds)"
 msgstr "si (mantenir feeds)"
 
-msgid "yuv"
-msgstr ""
-
 #
 msgid "zap"
 msgstr "zappejar"
@@ -13565,3 +13512,6 @@ msgstr ""
 #
 msgid "zapped"
 msgstr "zappejat"
+
+msgid "®"
+msgstr ""
