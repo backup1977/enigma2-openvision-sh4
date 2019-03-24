@@ -77,11 +77,11 @@ static bool icon_onoff[45];
 static int led_onoff[7];
 //static int led_onoff[LAST_LED];
 static pthread_t thread_start_loop = 0;
-void *start_loop (void *arg);
+void * start_loop (void *arg);
 bool blocked    = false;
 bool requested  = false;
 bool VFD_CENTER = false;
-int  VFD_SCROLL = 1;  // 1=scroll once
+int VFD_SCROLL  = 1;  // 1=scroll once
 bool scoll_loop = false;
 
 char chars[64];
