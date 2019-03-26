@@ -42,7 +42,6 @@
  * 20170313 Audioniek       Kathrein UFS910/912 added.
  * 20190311 Ghani           Cuberevo all models added
  *                          display length in stead of always 14.
- * 20190317 Audioniek       Several CubeRevo's added.
  *
  ****************************************************************************/
 #include <stdarg.h>
@@ -117,8 +116,8 @@ struct vfd_ioctl_data
 	#define VFDLENGTH 13
 #elif defined (ENABLE_CUBEREVO_MINI) \
    || defined (ENABLE_CUBEREVO_MINI2) \
-   || defined (ENABLE_CUBEREVO_2000HD) \
-   || defined (ENABLE_CUBEREVO_3000HD)
+   || defined (ENABLE_CUBEREVO_3000HD) \
+   || defined (ENABLE_CUBEREVO_2000HD)
 	#define VFDLENGTH 14
 #else
 	#define VFDLENGTH 16
@@ -229,7 +228,7 @@ void * start_loop (void *arg)
 	//ioctl(fpc, FRONTPANELSCROLLMODE, &scrollMode);
 
 	// display string
-	char str[] = "SH4 Enigma2";
+	char str[] = "SH4 OpenVision";
 	int length = strlen(str);
 	char dispData[MAX_CHARS + 1];
 	int offset = 0;
@@ -305,18 +304,6 @@ void * start_loop (void *arg)
 		char str[] = "SH4 OpenVision";
 	#elif defined (ENABLE_SPARK)
 		char str[] = "SH4 OpenVision";
-	#elif defined (ENABLE_CUBEREVO)
-		char str[] = "SH4 OpenVision";
-	#elif defined (ENABLE_CUBEREVO_250HD)
-		char str[] = "SH4 OpenVision";
-	#elif defined (ENABLE_CUBEREVO_MINI)
-		char str[] = "SH4 OpenVision";
-	#elif defined (ENABLE_CUBEREVO_MINI2)
-		char str[] = "SH4 OpenVision";
-	#elif defined (ENABLE_CUBEREVO_2000HD)
-		char str[] = "SH4 OpenVision";
-	#elif defined (ENABLE_CUBEREVO_3000HD)
-		char str[] = "SH4 OpenVision";
 	#elif defined (ENABLE_FORTIS_HDBOX)
 		char str[] = "SH4 OpenVision";
 	#elif defined (ENABLE_OCTAGON1008)
@@ -338,6 +325,20 @@ void * start_loop (void *arg)
 	#elif defined (ENABLE_UFS912)
 		char str[] = "SH4 OpenVision";
 	#elif defined (ENABLE_UFS913)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO_MINI2)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO_MINI)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO_3000HD)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO_9500HD)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO_2000HD)
+		char str[] = "SH4 OpenVision";
+	#elif defined (ENABLE_CUBEREVO_250HD)
 		char str[] = "SH4 OpenVision";
 	#else
 		char str[] = "SH4 Enigma2";
@@ -371,7 +372,7 @@ void * start_loop (void *arg)
 		if (vloop%2 == 1)
 		{
 			vfd.vfd_set_icon((((vloop%32)/2)%16), ICON_OFF, true);
-			usleep(2000);
+			usleep(1000);
 			vfd.vfd_set_icon(((((vloop%32)/2)%16)+1), ICON_ON, true);
 		}
 	}
@@ -498,20 +499,20 @@ static void *vfd_write_string_scrollText1(void *arg)
 	{
 		if (blocked)
 		{
-			usleep(750000); //0.75s pause between scroll loops?
+			usleep(250000); //0.25s pause between scroll loops?
 		}
 		else
 		{
 			scoll_loop = false;
 		}
-		for (i = 0; i <= (len-VFDLENGTH); i++) //scroll part 1: write full string scrolling and wait 0.75s between scrolls
+		for (i = 0; i <= (len-VFDLENGTH); i++) //scroll part 1: write full string scrolling and wait 0.25s between scrolls
 		{
 			if (blocked)
 			{
 				memset(out, ' ', VFDLENGTH); //fill buffer with spaces
 				memcpy(out, g_str+i, VFDLENGTH); ///then put string in
 				vfd.vfd_write_string(out, true);  //print string on VFD
-				usleep(750000); //0.75 sec character delay
+				usleep(250000); //0.25 sec character delay
 			}
 			else
 			{
@@ -526,7 +527,7 @@ static void *vfd_write_string_scrollText1(void *arg)
 				memset(out, ' ', VFDLENGTH); //fill buffer with spaces
 				memcpy(out, g_str+len+i-VFDLENGTH, VFDLENGTH-i); // copy string shifted 1 character
 				vfd.vfd_write_string(out, true);
-				usleep(750000); //0.75 sec character delay
+				usleep(250000); //0.25 sec character delay
 			}
 			else
 			{
@@ -537,13 +538,7 @@ static void *vfd_write_string_scrollText1(void *arg)
 		memcpy(out, g_str, VFDLENGTH);
 		vfd.vfd_write_string(out, true); //final display: write 1st VFDLENGTH characters
 		if (VFD_SCROLL != 2 || !blocked)
-		{
 			scoll_loop = false;
-		}
-		else
-		{
-			sleep(1); // 1 sec delay between loops
-		}
 	}
 	blocked = false;
 	return NULL;
@@ -552,10 +547,6 @@ static void *vfd_write_string_scrollText1(void *arg)
 void evfd::vfd_write_string(char * str)
 {
 	int i = strlen(str);
-	if (i > 63)
-	{
-		i = 63;
-	}
 	if (blocked)
 	{
 		pthread_cancel(thread_start_loop);
@@ -577,47 +568,30 @@ void evfd::vfd_write_string(char *str, bool force)
 {
 	int ws = 0;
 	int i = strlen(str);
-	if (VFD_CENTER == true)
+	if (VFD_CENTER)
 	{
 		if (i < VFDLENGTH)
-		{
 			ws = (VFDLENGTH - i) / 2;
-		}
 		else
-		{
 			ws = 0;
-		}
 	}
-
-	if (i > VFDLENGTH)
-	{
-		i = VFDLENGTH;
-	}
-
+	if (i > VFDLENGTH) i = VFDLENGTH;
 	struct vfd_ioctl_data data;
-
 	memset(data.data, ' ', VFDLENGTH);
-	if (VFD_CENTER == true)
-	{
-		memcpy(data.data + ws, str, VFDLENGTH - ws);
-	}
+	if (VFD_CENTER)
+		memcpy(data.data+ws, str, VFDLENGTH-ws);
 	else
-	{
 		memcpy(data.data, str, i);
-	}
 	data.start = 0;
-	if (VFD_CENTER == true)
-	{
-		data.length = i + ws <= VFDLENGTH ? i + ws : VFDLENGTH;
-	}
+	if (VFD_CENTER)
+		data.length = i+ws<=VFDLENGTH?i+ws:VFDLENGTH;
 	else
-	{
 		data.length = i;
-	}
-	file_vfd = open (VFD_DEVICE, O_WRONLY);
-	write(file_vfd,data.data,data.length);
-	close (file_vfd);
+		file_vfd = open (VFD_DEVICE, O_WRONLY);
+		write(file_vfd,data.data,data.length);
+		close (file_vfd);
 }
+
 #else
 
 void evfd::vfd_write_string(char *str)
@@ -663,20 +637,20 @@ void evfd::vfd_write_string_scrollText(char *text)
 	if (!blocked)
 	{
 		int i, len = strlen(text);
-		char* out = (char *) malloc(63);
-		for (i = 0; i <= (len-63); i++)
+		char* out = (char *) malloc(16);
+		for (i = 0; i <= (len-16); i++)
 		{ // scroll text until end
-			memset(out, ' ', 63);
-			memcpy(out, text + i, 63);
+			memset(out, ' ', 16);
+			memcpy(out, text + i, 16);
 			vfd_write_string(out);
-			usleep(750000);
+			usleep(200000);
 		}
-		for (i = 1; i < 63; i++)
+		for (i = 1; i < 16; i++)
 		{ // scroll text with whitespaces from right
-			memset(out, ' ', 63);
-			memcpy(out, text + len +i - 63, 63 - i);
+			memset(out, ' ', 16);
+			memcpy(out, text + len +i - 16, 16 - i);
 			vfd_write_string(out);
-			usleep(750000);
+			usleep(200000);
 		}
 		memcpy(out, text, VFDLENGTH); //final: display first VFDLENGTH chars after scrolling
 		vfd_write_string(out);
@@ -832,14 +806,6 @@ void evfd::vfd_set_fan(bool onoff)
 
 void evfd::vfd_set_SCROLL(int id)
 {
-	if (id > 2)  //if more than 2, set 2 (scroll continously)
-	{
-		id = 2;
-	}
-	if (id < 0) //if less than zero, set zero (no scroll)
-	{
-		id = 0;
-	}
 	VFD_SCROLL = id;
 }
 
