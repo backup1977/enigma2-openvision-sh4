@@ -95,7 +95,7 @@ struct vfd_ioctl_data
 	unsigned char length;
 };
 
-#if defined ENABLE_TF7700
+#if defined (ENABLE_TF7700)
 	#define MAX_CHARS 8
 	#define VFDLENGTH 8
 #elif defined (ENABLE_HS7810A) \
@@ -229,7 +229,7 @@ void * start_loop (void *arg)
 	//ioctl(fpc, FRONTPANELSCROLLMODE, &scrollMode);
 
 	// display string
-	char str[] = "        TOPFIELD TF7700 ENIGMA2";
+	char str[] = "SH4 Enigma2";
 	int length = strlen(str);
 	char dispData[MAX_CHARS + 1];
 	int offset = 0;
